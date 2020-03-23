@@ -1,0 +1,18 @@
+{
+  "name": "obj_2_draco_gltf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gltf": "obj2gltf  -i ./objModel/model.obj -o ./gltfModel/model.gltf --unlit --separate",
+    "draco": "gltf-pipeline -i  ./gltfModel/model.gltf  -o  ./gltfModel/model_draco.gltf -d --separate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gltf-pipeline": "^2.1.8",
+    "obj2gltf": "^3.1.0"
+  }
+}
